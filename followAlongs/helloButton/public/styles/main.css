@@ -1,3 +1,21 @@
 body {
     background: beige;
 }
+
+.buttonGroup{
+    text-align: center;
+    padding: 5vw;
+
+}
+
+.buttonGroup > button{
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+}
+
+#counter {
+    color: darkgrey;
+    text-align: center;
+    font-size: 4em;
+}
