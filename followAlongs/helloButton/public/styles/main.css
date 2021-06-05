@@ -10,12 +10,12 @@ body {
 
 .buttonGroup > button{
     font-size: 1.5em;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
 }
 
 #counter {
     color: darkgrey;
     text-align: center;
-    font-size: 4em;
+    font: 4em Consolas, Courier, monospace;
 }
