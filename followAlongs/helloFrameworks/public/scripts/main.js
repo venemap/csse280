@@ -3,7 +3,7 @@
  * Provides the JavaScript interactions for all pages.
  *
  * @author 
- * PUT_YOUR_NAME_HERE
+ * Peter Venema
  */
 
 /** namespace. */
@@ -11,26 +11,39 @@ var rhit = rhit || {};
 
 /** globals */
 rhit.variableName = "";
+rhit.counter = 0;
 
 /** function and class syntax examples */
 rhit.functionName = function () {
 	/** function body */
 };
+rhit.updateCounter = function(amt, isMult) {
 
-rhit.ClassName = class {
-	constructor() {
-
-	}
-
-	methodName() {
-
-	}
-}
+	if (isMult){
+		rhit.counter *= amt;
+	} else{
+		rhit.counter += amt;
+	};
+	document.querySelector("#counter").innerHTML = `Count = ${rhit.counter}`;
+};
 
 /* Main */
 /** function and class syntax examples */
 rhit.main = function () {
+
 	console.log("Ready");
+	const buttons = document.querySelectorAll("#counterButtons button");
+
+	for (const button of buttons){
+		button.onclick = (event) => {
+			const dataAmount = parseInt(button.dataset.amount);
+			const dataIsMultiplication = button.dataset.isMultiplication;
+			// console.log(`Amount: ${dataAmount} isMult: ${dataIsMultiplication}`);
+
+			rhit.updateCounter(dataAmount, dataIsMultiplication)
+		};
+	};
 };
 
 rhit.main();
+
