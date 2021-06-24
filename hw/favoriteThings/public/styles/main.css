@@ -1,0 +1,63 @@
+body {
+    background: #DDDDDD;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#counterLabel {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+#favoriteColorContainer {
+    width: 200px;
+    margin: 20px;
+}
+
+div > .favBtnNum{
+    color: white;
+    background-color: #800000;
+    border-color:transparent;
+}
+
+#favoriteColorBox {
+    background-color: #800000;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    text-transform: capitalize;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*=col-] {
+    padding: 2px;
+}
+
+#blue, #green, #red, #purple {
+    color:white;
+    border-color: transparent;
+}
+#blue {
+    background-color: blue;
+}
+#green {
+    background-color: green;
+}
+#red {
+    background-color: red;
+}
+#purple {
+    background-color: purple;
+}
+

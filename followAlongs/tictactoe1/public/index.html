@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>TicTacToe</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">TicTacToe</a>
+  </nav>
+  <div id="mainPage" class="page-container">
+
+    <h1 id="gameStateText" class="">X's Turn</h1>
+
+
+    <div id="gameBoard" class="">
+        <div class="square b-bottom b-right"></div>
+        <div class="square b-bottom b-right b-left"></div>
+        <div class="square b-bottom b-left"></div>
+        <div class="square b-bottom b-top b-right"></div>
+        <div class="square b-bottom b-top b-right b-left"></div>
+        <div class="square b-bottom b-top b-left"></div>
+        <div class="square b-top b-right">X</div>
+        <div class="square b-top b-right b-left">X</div>
+        <div class="square b-top b-left"></div>
+        <button type="button" class="btn" id="newGameButton">New Game</button>
+    </div>
+
+
+    <!-- flexbox-->
+      <!-- <div id="gameBoard" class="">
+        <div class="my-row">
+          <div class="square b-bottom b-right">&nbsp;</div>
+          <div class="square b-bottom b-right b-left">&nbsp;</div>
+          <div class="square b-bottom b-left">&nbsp;</div>
+        </div>
+        <div class="my-row">
+          <div class="square b-bottom b-top b-right">X</div>
+          <div class="square b-bottom b-top b-right b-left">X</div>
+          <div class="square b-bottom b-top b-left">X</div>
+        </div>
+        <div class="my-row">
+          <div class="square b-top b-right">X</div>
+          <div class="square b-top b-right b-left">X</div>
+          <div class="square b-top b-left">X</div>
+        </div>
+        <div class="my-row">
+          <button type="button" class="btn" id="newGameButton">New Game</button>
+        </div>
+      </div> -->
+
+
+
+    <!-- Bootstap -->
+    <!-- <div class="row justify-content-center">
+      <div id="gameboard" class="col-10 col-md-6">
+        <div class="row">
+          <div class="col square b-bottom b-right">X</div>
+          <div class="col square b-bottom b-right b-left">X</div>
+          <div class="col square b-bottom b-left">X</div>
+        </div>
+        <div class="row">
+          <div class="col square b-bottom b-top b-right">X</div>
+          <div class="col square b-bottom b-top b-right b-left">X</div>
+          <div class="col square b-bottom b-top b-left">x</div>
+        </div>
+        <div class="row">
+          <div class="col square b-top b-right">X</div>
+          <div class="col square b-top b-right b-left">X</div>
+          <div class="col square b-top b-left">x</div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn" id="newGameButton">New Game</button>
+        </div>
+      </div>
+    </div> -->
+
+    
+
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

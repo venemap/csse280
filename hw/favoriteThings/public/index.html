@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Hello Frameworks</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Favorite Things</a>
+  </nav>
+
+  <div id="favNum" class="page-container">
+    <hr>
+    <span class="h1">Favorite Number: </span>
+    
+    <br>
+
+      <div class="h1" id="counterLabel">0</div>
+    <div class="row justify-content-center">
+      <div class="col-md-2 col-4">
+        <button type="button" class="btn btn-block favBtnNum" id="decButton">-1</button>
+      </div>
+      <div class="col-md-2 col-4">
+        <button type="button" class="btn btn-block favBtnNum" id="resetButton">Reset</button>
+      </div>
+      <div class="col-md-2 col-4">
+        <button type="button" class="btn btn-block favBtnNum" id="incButton">+1</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <hr>
+
+  <span class="h1">Favorite Color:</span>
+
+  <div id="favoriteColorContainer" class="mx-auto">
+    
+    <div id="favoriteColorBox">
+      #800000
+    </div>
+
+  </div>
+
+  <div class="row no-gutters justify-content-center">
+    <div class="col-md-2 col-3">
+      <button type="button" id="blue" class="btn btn-outline-primary btn-block">Blue</button>
+    </div>
+    <div class="col-md-2 col-3">
+      <button type="button" id="green" class="btn btn-outline-primary btn-block">Green</button>
+    </div>
+    <div class="col-md-2 col-3">
+      <button type="button" id="red" class="btn btn-outline-primary btn-block">Red</button>
+    </div>
+    <div class="col-md-2 col-3">
+      <button type="button" id="purple" class="btn btn-outline-primary btn-block">Purple</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
