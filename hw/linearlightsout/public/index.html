@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Linear Lights Out</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Linear Lights Out</a>
+  </nav>
+  <div id="mainPage" class="page-container">
+
+    <h1 id="gameStateText" class="">Make the buttons match</h1>
+
+
+    <!-- flexbox-->
+      <div id="gameBoard" class="">
+        <div class="gameRow">
+          <button type="button" data-index="0" class="btn btnGame" id="btn0">0</button>
+          <button type="button" data-index="1" class="btn btnGame" id="btn1">0</button>
+          <button type="button" data-index="2" class="btn btnGame" id="btn2">0</button>
+          <button type="button" data-index="3" class="btn btnGame" id="btn3">0</button>
+          <button type="button" data-index="4" class="btn btnGame" id="btn4">0</button>
+          <button type="button" data-index="5" class="btn btnGame" id="btn5">0</button>
+          <button type="button" data-index="6" class="btn btnGame" id="btn6">0</button>
+        </div>
+      <div class="newGameRow">
+        <button type="button" class="btn" id="newGameButton">New Game</button>
+      </div>
+
+    
+
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

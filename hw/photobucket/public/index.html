@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Photo Bucket</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Photo Bucket</a>
+  </nav>
+  <div id="mainPage" class="container page-container">
+
+    <div id="listPage" class="container page-container">
+      <div id="columns">
+        <!--  -->
+      </div>
+
+     
+    </div>
+
+
+    <button id="fab" type="button" class="btn btn-primary bmd-btn-fab" data-toggle="modal" data-target="#exampleModal">
+      <i class="material-icons">add</i>
+    </button>
+
+
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="Add image and caption" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add a photo</h5>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="inputdefault">Image:</label>
+                <input class="form-control" id="inputURL" type="text" placeholder="URL to existing image"> 
+              </div>
+              <div class="form-group">
+                <label for="inputdefault">Caption:</label>
+                <input class="form-control" id="inputCaption" type="text" placeholder="Image related text"> 
+              </div>   
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              CANCEL
+            </button>
+            <button id="submitAddImage"type="button" class="btn btn-primary">CREATE</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+
+
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

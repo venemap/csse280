@@ -1,0 +1,88 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cell {
+    background-color: #80000080;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 100px;
+    flex: 1 0 0;
+    margin: 5px;
+}
+
+.btnGame {
+    background-color: #800000;
+    margin: 0 5px;
+    /* margin: auto; */
+    /* height: 3.5em;
+    width: 2.5em; */
+    text-align: center;
+}
+
+#gameStateText {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#newGameButton {
+    background-color: #800000;
+    margin-top: 15px;
+    color: white;
+    margin-left: auto;
+    float:right;
+}
+
+.gameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#gameBoard {
+    margin: 20px auto;
+}
+
+@media (min-width: 576px) {
+    .btnGame {
+        font-size: 1.5em;
+        /* height: 75px; */
+    }
+    
+    #newGameButton {
+        font-size: 1.25em;
+    }
+
+    #gameStateText {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .btnGame {
+        font-size: 2em;
+        /* height: 2em; */
+    }
+
+    #newGameButton {
+        font-size: 1.5em;
+    }
+
+    #gameStateText {
+        font-size: 3rem;
+    }
+}

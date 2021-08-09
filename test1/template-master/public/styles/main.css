@@ -1,0 +1,18 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+
+h1 {
+    color: #800;
+    font-size: 1.25em;
+}

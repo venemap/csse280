@@ -1,0 +1,79 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+#columns {
+    column-count: 3;
+    column-gap: 5px;
+}
+
+@media (min-width: 992px) {
+    #columns {
+        column-count: 4;
+        column-gap: 10px;
+    }
+}
+
+.pin {
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0 2px 15px;
+    padding: 10px;
+    padding-bottom: 5px;
+    background-color: linear-gradient(45deg, #fff, #eee);
+    transform: all 0.2s, ease;
+}
+
+.pin img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 3px;
+}
+
+.pin p {
+    font: 18px Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    max-height: 18px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+#fab {
+    background: #800;
+    bottom: 10px;
+    color: white;
+    position: fixed;
+    right: 10px;
+    z-index: 999;
+}
+
+#fab:active {
+    transform: translateY(2px);
+    opacity: 0.8;
+}
+
+.dropdown-menu-right {
+    left: -128px;
+}
+
+#detailPage .pin {
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+}
